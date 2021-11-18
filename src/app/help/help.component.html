@@ -1,0 +1,84 @@
+
+<div class="contact-form">
+  <app-display-header titleName="Help & Support"></app-display-header>
+      <div [hidden]="submitted">
+      
+        <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+          <div class="form-group">
+          
+            <input type="text" class="form-control" id="name"placeholder="Your Name" required
+                   required
+                   [(ngModel)]="model.name" name="name"
+                   #name="ngModel">
+            <div [hidden]="name.valid || name.pristine"
+                 class="alert">
+              Name is required
+            </div>
+           <br> 
+           <div >
+           <input type="text" class="form-control" id="contract" placeholder="Your Contact" required
+          required
+                 [(ngModel)]="model.contract" name="contract" #contract="ngModel"
+                   minlength="10" maxlength="10" pattern="[1-9][0-9]{9}" >
+                 <div [hidden]="contract.valid || contract.pristine"
+               class="alert alert-danger">
+               Contact is required
+          </div>
+        </div>
+
+        <div>
+          <input type="text" class="form-control" id="email" placeholder="Your Email" required
+          required
+                 [(ngModel)]="model.email" name="email" #email="ngModel"
+                 pattern="[^ @]*@[^ @]*" >
+                 <!-- pattern="/^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/" >-->
+                 <div [hidden]="email.valid || email.pristine"
+               class="alert alert-danger">
+               Email is required
+          </div>
+        </div>
+
+           <div>
+                     <textarea ype="text" class="form-control" id="comment" placeholder="Message" rows="4"  required
+          [(ngModel)]="model.comment" name="comment" name="comment" style="height:50px"></textarea> </div>
+
+
+
+
+        <button type="submit" class="form-control submit" [disabled]="!heroForm.form.valid">Submit</button><br>
+        <button type="button" class="form-control submit" (click)="newHero(); heroForm.reset()">Reset </button>
+        
+  </div>
+
+  </form>
+  </div>
+
+  
+  
+   
+    <div [hidden]="!submitted">
+      <div class="card">
+      <h2>You submitted the following:</h2>
+      <tr> 
+        <th>Name:</th>
+        <td>{{ model.name }}</td>
+      </tr>
+      <tr>
+          <th >contact:</th>
+          <td>{{ model.contract }}</td>
+      </tr>
+      <tr>
+            <th >Email:</th>
+            <td>{{ model.email }}</td>
+      </tr>
+      <tr>
+        <th >comment:</th>
+        <td>{{ model.comment }}</td>
+      </tr>
+      <button  class="btn btn-primary" (click)="submitted=false">Edit</button>
+    </div> 
+  </div> 
+</div>
+
+
+  

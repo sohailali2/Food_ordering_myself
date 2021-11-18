@@ -1,0 +1,9 @@
+<div class="sticky">
+    
+
+    <div class="lifecycle" *ngIf="show">   
+     <p id="content">{{content}}</p>
+     <h1  #afterView>Hooks </h1>
+     </div>
+    <button  (click)="displayOrUndisplay()" >Show content</button>
+</div>

@@ -1,0 +1,76 @@
+<!-- <div class="sticky">
+    
+<div ngClass="header">
+    <div ngClass="logo">
+        <img ngClass="header-logo-img" routerLink="" alt="logo" src="../../assets/images/logo2.png">
+    </div>
+    <div ngClass="header-menu">
+        <ul [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active">
+    <li>
+    <a ngClass="list" routerLink="" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="linkActive">Home</a>
+    </li>
+    <li>
+    <a ngClass="list"routerLink="/about" routerLinkActive="linkActive">About</a>
+    </li>
+    <li>
+    <a ngClass="list" routerLink="/help" routerLinkActive="linkActive" >Help & Support</a>
+    </li>
+    <li>
+        <a ngClass="list" routerLink="/contact"routerLinkActive="linkActive" >Contact</a>
+        </li>
+    <li>
+    <a ngClass="list" routerLink="/cart" routerLinkActive="linkActive">Cart</a>
+    </li>
+    <li>
+        <a ngClass="list" routerLink="/settings" routerLinkActive="linkActive">Settings</a>
+        </li>
+        <li>
+            <a ngClass="list" routerLink="/lifecycle" routerLinkActive="linkActive">Lifecycle</a>
+            </li>
+
+           
+        
+    </ul>
+    </div>
+</div>
+</div>
+<router-outlet></router-outlet>
+
+
+ -->
+ <nav class="sticky">
+   <div class="">
+    <ul ngClass="header">
+      <div ngClass="brand">
+          <img routerLink="" alt="logo" src="./../assets/images/logo2.png">
+      </div>
+      <label ngClass="trigger2" for="x7"><i class="fa fa-bars"></i></label>
+    </ul>
+    <input type="checkbox" id="x7" />
+    <ul ngClass="main" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active">
+        <li class="x1">
+          <a ngClass="list" routerLink="" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="linkActive">Home</a>
+        </li>
+        <li class="x1">
+          <a ngClass="list"routerLink="/about"routerLinkActive="linkActive">About</a>
+        </li>
+        <li class="x1">
+         <a ngClass="list" routerLink="/help" routerLinkActive="linkActive">Help & Support</a>
+        </li>
+        <li class="x1">
+          <a ngClass="list" routerLink="/contact"routerLinkActive="linkActive">Contact</a>
+        </li>
+        <li class="x1">
+          <a ngClass="list" routerLink="/cart" routerLinkActive="linkActive">Cart</a>
+        </li>
+        <li class="x1">
+        <a ngClass="list" routerLink="/settings" routerLinkActive="linkActive">Settings</a>
+        </li>
+        <li class="x1">
+          <a ngClass="list" routerLink="/hooks" routerLinkActive="linkActive">Hooks</a>
+        </li>
+    </ul>
+  </div>
+  </nav>
+  
+  <router-outlet></router-outlet> 

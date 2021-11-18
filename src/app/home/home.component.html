@@ -1,0 +1,59 @@
+
+<div class="home">
+  <div class="cardcontent">
+  <div class="home-name"> 
+    <app-display-header titleName="Home"></app-display-header>   
+  </div>
+  
+  
+  <div class="card">
+  <div class="product-item" *ngFor="let burger of data">
+    
+  <div class="card-details">
+  
+  <div class="card-image">
+  <img src="{{burger.image}}" alt="image" class="card-image">
+  
+  </div>
+  <div class="card-content">
+  <div class="card-top">
+  <div class="card-item">
+    <a class="name" [routerLink]="['burger',burger.id]">
+  <div class="card-name">
+  <div>{{burger.name}}  <img class="food_tag"   src="{{burger.foodtag}}" alt="veg"></div>
+  <div class="card-description">{{burger.description}}</div>
+  </div>
+  
+</a>
+  </div>
+  </div>
+  <div class="bottom-card">
+  <div class="bottom">
+  <div class="amount">
+  ₹
+  <span class="currency">
+  {{burger.price}}
+  </span>
+  </div>
+  
+  
+  <div> 
+      
+      <button class="card-button">
+          <div class="card-buttonadd " (click)="addCart(burger)">{{burger.cart}}</div>
+      </button>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+  </div>   
+              
+  </div>
+  </div>
+  </div>
+
+
+
+  

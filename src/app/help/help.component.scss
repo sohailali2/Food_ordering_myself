@@ -1,0 +1,105 @@
+
+
+:host {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+  }   
+  button {
+    font-family: Arial;
+    background-color: coral;
+    border-color: coral;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+    color: white;
+    width: 10rem;
+    
+  }
+  
+  button:hover {
+    background-color: #bd1906;
+  }
+  
+  button:disabled {
+    background-color: #eee;
+    color: #ccc;
+    cursor: auto;
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  
+  .contact-form{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 4rem;
+    
+  }  
+  
+  .form-control{
+    width: 600px;
+    background: transparent;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid grey;
+    color:000;
+    font-size: 18px;
+    margin-bottom: 16px;
+    
+    
+    
+  }
+  .alert{
+    color: rgb(194, 44, 44);
+  }
+  input{
+    height: 45px;
+   
+  }
+  form .submit{
+    background-color:coral;
+    color:#fff;
+    border-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+    
+  
+  }
+  .container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 6px;
+  }
+
+
+.card {
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5rem;
+}
+
+th, td {
+  padding: 10px;
+}
+
+  @media screen and(min-width: 320px) and (max-width: 500px) {
+    
+    .form-control{
+      width: 15rem !important;
+    }
+    
+  }
+  

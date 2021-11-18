@@ -1,0 +1,78 @@
+
+.title{
+  margin: 2rem;
+  font-size: 1rem;
+  text-align: center;
+}
+.card{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 20rem;
+  margin: 2rem 0;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  background-color: #f1f1f1;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.fa-fa-check-circle{
+  color: green;
+
+}
+
+.fa-fa-times-circle{
+  color: red;
+}
+
+a{
+  text-align: none;
+  color: indianred;
+}
+
+p{
+  color: black;
+}
+
+.info{
+  display: flex;
+}
+
+.icon{
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.body{
+  padding-top: 5rem;
+}
+
+.cross{
+      width: 15px;
+     height: 15px;
+} 
+
+@media  screen and (min-width: 320px) and (max-width: 500px) {
+    .body{
+      background-color: pink !important;
+      width: 110% ;
+    }
+    
+    .card{
+      width: 17rem;
+    }
+    
+  }
+
+
+
+
+
+
+

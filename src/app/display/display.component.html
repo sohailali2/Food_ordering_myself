@@ -1,0 +1,30 @@
+         <div class="body">
+            <div class="title">
+              <h1>settings</h1>
+            </div>
+            <div class="container">
+              <div class="" *ngIf="data">
+                <div class="card">
+                  <div [routerLink]="['/setting',data.id]">
+                   <div class="info">
+                     <p>{{data.title}}</p>
+ 
+                     <div class="icon" [ngSwitch]= "data.completed">
+                       <span *ngSwitchCase="false"> <img  class="cross" src="../assets/images/cross.png"> </span>
+                      
+                     </div>
+ 
+                     <div class="icon" [ngSwitch]= "data.completed">
+                       <span *ngSwitchCase="true"> <img class="cross" src="../assets/images/green_check.png"> </span>
+                     </div>
+                      
+                      
+                     
+                       
+                     
+                   </div>
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
